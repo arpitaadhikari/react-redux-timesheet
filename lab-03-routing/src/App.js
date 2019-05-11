@@ -19,6 +19,7 @@ class App extends Component {
             <Route path="/projects" component={Projects} />
             <Route exact path="/employees" component={Employees} />
             <Route path="/employees/:user_id/timesheets" component={Timesheets}/>
+            <Route path="/timesheets" component={Timesheets}/>
             <Redirect to="/employees" />
           </Switch>
 

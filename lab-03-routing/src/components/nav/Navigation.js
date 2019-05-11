@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 class Navigation extends Component {
   // TODO - actually implement this for realz
@@ -30,6 +31,9 @@ class Navigation extends Component {
           <LinkContainer to={`/employees/${this.state.user._id}/timesheets`}>
             <NavItem eventKey={2}>Timesheets</NavItem>
           </LinkContainer>
+
+          <NavItem><NavLink to="/newprojects">New Projects</NavLink></NavItem>
+
         </Nav>
       </Navbar>
     );

@@ -25,7 +25,10 @@ class EmployeeTable extends Component {
         </tr>
         </thead>
         <tbody>
+          
           {employeeRows}
+
+          
         </tbody>
       </Table>
     );
